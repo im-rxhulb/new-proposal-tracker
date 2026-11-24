@@ -1,0 +1,18 @@
+.reminder-list { display: block; min-height: 35px; }
+.reminder {
+    display: flex;
+    gap: 12px;
+    padding: 13px 0;
+    border-bottom: 1px solid #d9e9de;
+}
+.reminder:first-child { padding-top: 0; }
+.reminder-mark {
+    flex: 0 0 9px;
+    width: 9px;
+    height: 9px;
+    margin-top: 5px;
+    border-radius: 50%;
+    background: #e5b84f;
+}
+.reminder h3 { margin-bottom: 5px; color: #174b42; font-size: 13px; }
+.reminder p { color: #66877b; font-size: 11px; }
