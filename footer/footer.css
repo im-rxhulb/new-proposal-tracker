@@ -1,0 +1,7 @@
+.site-footer {
+    padding: 22px 15px;
+    color: #66877b;
+    font-size: 12px;
+    text-align: center;
+}
+.site-footer p + p { margin-top: 4px; }

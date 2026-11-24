@@ -1,0 +1,22 @@
+.stat-card-total {
+    min-width: 0;
+    min-height: 112px;
+    padding: 20px;
+    border: 1px solid #c8ded1;
+    border-top: 4px solid #176b5b;
+    border-radius: 13px;
+    background: #fff;
+    box-shadow: 0 5px 16px rgba(23, 107, 91, .07);
+    transition: transform .2s;
+}
+.stat-card-total:hover { transform: translateY(-4px); }
+.stat-card-total p {
+    margin-bottom: 12px;
+    color: #66877b;
+    font-size: 13px;
+}
+.stat-card-total h3 {
+    color: #174b42;
+    font-size: clamp(20px, 2.2vw, 28px);
+    overflow-wrap: anywhere;
+}

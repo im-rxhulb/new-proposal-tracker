@@ -1,0 +1,29 @@
+.tracker-toolbar {
+    display: flex;
+    gap: 10px;
+    margin: 18px 0 15px;
+}
+.tracker-toolbar input { flex: 1; min-width: 130px; }
+.tracker-toolbar select { width: 165px; }
+.tracker-toolbar input,
+.tracker-toolbar select {
+    padding: 11px;
+    border: 1px solid #b8d4c5;
+    border-radius: 7px;
+    background: #f7faf4;
+    color: #174b42;
+}
+.tracker-toolbar button {
+    padding: 11px 18px;
+    border: 0;
+    border-radius: 8px;
+    background: #176b5b;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+@media (max-width: 600px) {
+    .tracker-toolbar { flex-direction: column; }
+    .tracker-toolbar select,
+    .tracker-toolbar button { width: 100%; }
+}
