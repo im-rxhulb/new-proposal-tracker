@@ -62,10 +62,16 @@ async function startFreelanceFlow() {
         ];
 
         for (const [folder, initName] of modules) {
-            // changed ../ to ./ because app.js is in the root now
-            const module = await import(`./${folder}/${folder}.js`);
-            module[initName]();
-        }
+    const module = await import(`./${folder}/${folder}.js`);
+
+    // if the function name is wrong, show which file it is
+    if (typeof module[initName] !== "function") {
+        console.warn(`${folder}.js does not export ${initName}. It exports:`, Object.keys(module));
+        continue;
+    }
+
+    module[initName]();
+}
 
         // dashboard.js is in the root too, not in js/
         const dashboard = await import("./dashboard.js");
