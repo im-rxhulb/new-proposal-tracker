@@ -1,4 +1,4 @@
-import { addProposal } from "../../shared/data.js";
+import { addProposal } from "../data.js";
 
 export function initProposalForm() {
     const form = document.getElementById("proposalForm");
