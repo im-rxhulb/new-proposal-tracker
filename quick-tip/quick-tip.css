@@ -1,0 +1,10 @@
+.quick-tip-box {
+    padding: 15px;
+    border-radius: 9px;
+    background: #f6ebd4;
+    color: #386b5d;
+    font-size: 12px;
+    line-height: 1.7;
+}
+.quick-tip-box strong::before { content: "✦ "; }
+.quick-tip-box p { margin-top: 5px; }

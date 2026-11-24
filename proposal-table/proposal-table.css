@@ -1,0 +1,86 @@
+.table-wrap { width: 100%; overflow-x: auto; }
+.proposal-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    font-size: 12px;
+}
+.proposal-table caption {
+    padding: 0 0 12px;
+    color: #174b42;
+    font-weight: bold;
+    text-align: left;
+    text-transform: uppercase;
+}
+.proposal-table th {
+    padding: 12px 10px;
+    background: #e2f0e8;
+    color: #66877b;
+    font-size: 11px;
+    text-transform: uppercase;
+}
+.proposal-table td {
+    padding: 14px 10px;
+    border-bottom: 1px solid #d9e9de;
+    color: #386b5d;
+}
+.proposal-table tbody tr:hover { background: #edf5ee; }
+.status {
+    display: inline-block;
+    padding: 6px 9px;
+    border-radius: 20px;
+    background: #dcefe5;
+    color: #176b5b;
+    font-size: 10px;
+    font-weight: bold;
+}
+.status-won { background: #dcefe5; color: #238675; }
+.status-lost { background: #f3ebdd; color: #8a6840; }
+.status-follow { background: #c9e5d8; color: #176b5b; }
+.action-buttons {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    white-space: nowrap;
+}
+.small-button, .delete-button {
+    border: 0;
+    border-radius: 7px;
+    cursor: pointer;
+}
+.small-button {
+    padding: 7px 9px;
+    background: #176b5b;
+    color: white;
+    font-size: 10px;
+}
+.delete-button {
+    width: 28px;
+    height: 28px;
+    background: #f3ebdd;
+    color: #8a6840;
+    font-size: 18px;
+}
+.notes-row td { padding: 0 10px 12px; background: white; }
+.proposal-notes { color: #386b5d; font-size: 12px; }
+.proposal-notes summary {
+    display: inline-block;
+    padding: 3px 0;
+    color: #176b5b;
+    cursor: pointer;
+    font-weight: bold;
+}
+.proposal-notes p {
+    margin: 7px 0 2px;
+    padding: 10px 12px;
+    border-left: 3px solid #238675;
+    border-radius: 5px;
+    background: #f3f8f4;
+    line-height: 1.6;
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+}
+.result-message { min-height: 18px; margin-top: 12px; color: #66877b; font-size: 12px; }
+@media (max-width: 760px) {
+    .proposal-table { min-width: 590px; }
+}
