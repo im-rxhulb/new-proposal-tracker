@@ -1,0 +1,46 @@
+<section id="add-proposal" class="panel proposal-form-panel">
+    <div class="panel-heading">
+        <p class="section-kicker">GROW YOUR PORTFOLIO</p>
+        <h2>Add New Opportunity</h2>
+        <p>Enter the details of a new freelance proposal.</p>
+    </div>
+    <form id="proposalForm">
+        <div class="form-grid">
+            <div class="field">
+                <label for="projectName">Project name</label>
+                <input type="text" id="projectName" placeholder="Website redesign" required>
+            </div>
+            <div class="field">
+                <label for="clientName">Client name</label>
+                <input type="text" id="clientName" placeholder="Client / Company" required>
+            </div>
+            <div class="field">
+                <label for="deadline">Deadline</label>
+                <input type="date" id="deadline" required>
+            </div>
+            <div class="field">
+                <label for="projectValue">Estimated value (₹)</label>
+                <input type="number" id="projectValue" min="1" placeholder="25000" required>
+            </div>
+            <div class="field">
+                <label for="proposalStatus">Proposal status</label>
+                <select id="proposalStatus">
+                    <option>Draft</option>
+                    <option>Sent</option>
+                    <option>Follow-up</option>
+                    <option>Won</option>
+                    <option>Lost</option>
+                </select>
+            </div>
+            <div class="field">
+                <label for="followDate">Follow-up date</label>
+                <input type="date" id="followDate">
+            </div>
+            <div class="field full-field">
+                <label for="proposalNotes">Notes</label>
+                <textarea id="proposalNotes" placeholder="Add project details or next steps..."></textarea>
+            </div>
+        </div>
+        <button class="form-button" type="submit">Add Proposal</button>
+    </form>
+</section>
