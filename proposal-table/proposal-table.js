@@ -1,4 +1,4 @@
-import { proposals, subscribe, deleteProposal, changeProposalStatus } from "../../shared/data.js";
+import { proposals, subscribe, deleteProposal, changeProposalStatus } from "../data.js";
 
 function escapeHTML(value) {
     return String(value).replace(/[&<>"']/g, character => ({
