@@ -1,3 +1,4 @@
+// nav bar js code
 export function initNavbar() {
     const toggle = document.getElementById("navToggle");
     const links = document.getElementById("navLinks");
