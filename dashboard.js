@@ -1,4 +1,4 @@
-import { proposals, subscribe } from "../data.js";
+import { proposals, subscribe } from "./data.js";
 
 export function initDashboard() {
     function updateCards() {
