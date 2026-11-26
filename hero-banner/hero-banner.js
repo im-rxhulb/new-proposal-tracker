@@ -1,3 +1,4 @@
+// hero banner js code
 export function initHeroBanner() {
     const bannerImage = document.querySelector(".hero-banner img");
 
