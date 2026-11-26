@@ -1,3 +1,4 @@
+// proposal table js code
 import { proposals, subscribe, deleteProposal, changeProposalStatus } from "../data.js";
 
 function escapeHTML(value) {
