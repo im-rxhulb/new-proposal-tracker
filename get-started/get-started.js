@@ -1,3 +1,4 @@
+// get started js code
 export function initGetStarted() {
     const button = document.querySelector(".get-started-button");
 
